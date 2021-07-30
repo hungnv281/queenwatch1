@@ -146,12 +146,17 @@
         button {
             margin-top: 60px;
             padding: 25px 50px;
-            background-color: #605e5f;
+            border: none;
+            background-color: #747072;
             color: white;
+            transition: 0.5s all;
             font-size: 20px;
             &:hover {
-                letter-spacing: 5px;
-                opacity: 80%;
+                font-weight: bolder;
+                border-radius: 10px;
+                transition: 0.2s all;
+                color: green;
+                background-color: grey;
             }
         }
     }
@@ -161,7 +166,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: #222222;
-        transition: 1s;
+        transition: 1s all;
         .title {
             margin-top: 40px;
             margin-bottom: 30px;
@@ -173,6 +178,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
+            transition: 1s all;
             .block {
                 display: flex;
                 justify-content: center;
@@ -182,11 +188,12 @@
                 margin-right: 30px;
                 box-sizing: border-box;
                 overflow: hidden;
+                transition: 1s all;
                 img {
                     display: block;
                     margin:auto auto auto auto;
                     // -webkit-transition-property: all 1s;
-
+                    transition: 1s all;
                     &:hover {
                         transition: 0.6s all;
                         -webkit-transform: scale(1.2);
@@ -221,12 +228,9 @@
     .item {
         margin-left: 10%;
         width: 80%;
-        // height: 100%;
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        // grid-template-rows: 100px 100px;
         gap: 3%;
-        // border: 1px solid black;
         .item1,.item2,.item3,.item4,.item5 {
             box-sizing: border-box;
             overflow: hidden;
@@ -235,6 +239,7 @@
       
         img {
             width: 100%;
+            transition: 1s all;
             &:hover {     
                 transition: 1s all;
                 -webkit-transform: scale(1.2);
@@ -277,8 +282,6 @@
         .owl-carousel {
             width: 80%;
             margin-left: 10%;
-    //         display: flex;
-    //         justify-content: space-evenly;
             button {
                 display: block;
             }
@@ -290,7 +293,6 @@
                 position: relative;
                 transition: 1s all;
                 &:hover {
-                    transition: 0.5s;
                     background-color: #333333;
                     button {
                         display: block;
@@ -310,13 +312,14 @@
                     }
                 }
                 img {
-                    
+                    transition: 1s all;
                     position: absolute;
                     left: 10%;
                     top: 50px;
                     width: 80%;
                 }
                 button {
+                    transition: 1s all;
                     display: none;
                     position: absolute;
                     width: 40px;
@@ -405,11 +408,15 @@
         padding:15px 20px;
         background-color: yellow;
         border-radius: 10px;
+        transition: 0.7s all;
         &:hover {
+            font-weight: bolder;
+            transition: 1s all;
+            padding :15px 30px;
             cursor: pointer;
-            letter-spacing: 5px;
             opacity: 1.2;
-            
+            background-color: grey;
+            color: white;
         }
     }
 
@@ -433,9 +440,13 @@
         padding: 20px 50px;
         background-color: yellow;
         border-radius: 10px;
+        transition: 0.7s all;
         &:hover {
             cursor: pointer;
-            opacity: 0.5;
+            transition: 1s all;
+            padding: 20px 60px;
+            font-weight: bolder;
+            background-color: grey;
             color: white;
 
         }
