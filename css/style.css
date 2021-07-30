@@ -28,7 +28,8 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      position: static; }
+      position: static;
+      position: relative; }
       .header .row1 .col3 button {
         margin-right: 10px;
         width: 35px;
@@ -43,7 +44,6 @@
       .header .row1 .col3 .shopping {
         position: relative; }
         .header .row1 .col3 .shopping #cat {
-          position: absolute;
           background-color: #fffcb5; }
         .header .row1 .col3 .shopping .number {
           position: absolute;
@@ -52,7 +52,8 @@
           background-color: yellow;
           width: 13px;
           height: 13px;
-          right: -10px; }
+          top: 0px;
+          right: 8px; }
   .header .row2 {
     border-top: 1px solid #6e6e6e;
     background-color: black;

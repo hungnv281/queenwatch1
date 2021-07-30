@@ -39,7 +39,7 @@
             align-items: center;
             justify-content: flex-end;
             position: static;
-            // position: relative;
+            position: relative;
             button {
                 margin-right: 10px;
                 width: 35px;
@@ -61,7 +61,7 @@
                 position: relative;
                 #cat {
                     // display: block;
-                    position: absolute;
+                    // position: absolute;
                     background-color: #fffcb5;
                 }
                 .number {
@@ -71,7 +71,8 @@
                     background-color: yellow;
                     width: 13px;
                     height: 13px;
-                    right: -10px;
+                    top:0px;
+                    right: 8px;
                 }
             }
 
