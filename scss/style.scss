@@ -132,7 +132,7 @@
 }
 .content {
   font-size: 16px;
-  height: 47.5em;
+  // height: 47.5em;
   width: 100%;
 
   .infomation {
@@ -224,7 +224,7 @@
 
   .trade-mark {
     // width: 80%;
-    height: 260px;
+    // height: 260px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -271,7 +271,7 @@
 }
 .featured-products {
   width: 100%;
-  height: 800px;
+  padding-bottom: 60px;
   padding-top: 10px;
   display: flex;
   background-color: #333333;
@@ -330,8 +330,8 @@
     }
   }
   @media (max-width:1024px) {
-    margin-top:40px;
-    height: 620px;
+    // margin-top:40px;
+    // height: 620px;
   }
 }
 .new-cat {
@@ -339,7 +339,7 @@
   background-color: black;
   width: 100%;
   padding-top: 30px;
-  height: 600px;
+  // height: 600px;
   .intro {
     letter-spacing: 1px;
     text-align: center;
@@ -438,7 +438,7 @@
   background-color: #333333;
   width: 100%;
   padding-top: 30px;
-  height: 750px;
+  // height: 750px;
   .intro {
     letter-spacing: 1px;
     text-align: center;
@@ -494,6 +494,12 @@
       color: white;
     }
   }
+    @media (max-width:968px) {
+      .details{
+        flex-wrap: wrap;
+    
+      }
+  }
 }
 .appeal {
   text-align: center;
@@ -533,7 +539,7 @@
     padding-top: 90px;
     // width: 80%;
     padding-left: 10%;
-    height: 360px;
+    // height: 360px;
     display: flex;
     justify-content: center;
     background-color: #333333;
@@ -578,7 +584,7 @@
           position: absolute;
           outline: none;
           font-style: italic;
-          width: 65%;
+          width: 250px;
           border: 10px;
           color: #999999;
           background-color: #666666;
@@ -590,7 +596,8 @@
           background: none;
           border: none;
           position: absolute;
-          left: 230px;
+          // left: 230px;
+          left:210px;
           top: 5px;
           border-radius: 50%;
           width: 30px;

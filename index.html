@@ -327,7 +327,6 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: false,
-                button: false,
                 autoplaySpeed: 1000,
                 prevArrow: false,
                 nextArrow: false,
@@ -336,6 +335,7 @@
         });
         $(document).ready(function () {
             $(".slider").slick({
+                dots:false,
                 infinite: true,
                 slidesToShow: 5,
                 slidesToScroll: 1,
@@ -359,7 +359,7 @@
                     }
                     },
                     {
-                    breakpoint: 480,
+                    breakpoint: 500,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
