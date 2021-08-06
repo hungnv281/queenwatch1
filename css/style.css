@@ -123,7 +123,7 @@
             padding-bottom: 0.5em;
             border-bottom: 1px solid #5a5859; }
         .content .infomation .item .noi-dung button {
-          margin-top: 3em;
+          margin-top: 1.5em;
           padding: 1em 3.125em;
           border: none;
           background-color: #747072;
@@ -131,19 +131,18 @@
           transition: 0.5s all;
           font-size: 1.25em; }
           .content .infomation .item .noi-dung button:hover {
-            font-weight: bolder;
-            border-radius: 10px;
+            font-weight: lighter;
             transition: 0.2s all;
-            color: green;
+            color: #f6f8f6;
             background-color: grey; }
     .content .infomation #item1 {
-      background-image: url(images/content-img.png); }
+      background-image: url(/images/content-img.png); }
     .content .infomation #item2 {
-      background-image: url(images/content-img2.png); }
+      background-image: url(/images/content-img2.png); }
     .content .infomation #item3 {
-      background-image: url(images/content-img3.png); }
+      background-image: url(/images/content-img3.png); }
     .content .infomation #item4 {
-      background-image: url(images/content-img4.png); }
+      background-image: url(/images/content-img4.png); }
   @media (max-width: 1365px) {
     .content {
       font-size: 15px; } }
@@ -163,6 +162,7 @@
     .content {
       font-size: 5px; } }
   .content .trade-mark {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -175,28 +175,31 @@
       color: yellow;
       text-align: center; }
     .content .trade-mark .trade-mark-link {
+      width: 100%;
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
       transition: 1s all; }
-      .content .trade-mark .trade-mark-link .block {
+      .content .trade-mark .trade-mark-link .item {
         display: flex;
         justify-content: center;
-        width: 200px;
+        width: 16%;
         height: 100px;
         background-color: white;
-        margin-right: 30px;
+        margin: 0 2%;
         box-sizing: border-box;
         overflow: hidden;
         transition: 1s all; }
-        .content .trade-mark .trade-mark-link .block img {
+        .content .trade-mark .trade-mark-link .item img {
           display: block;
+          max-width: 90%;
+          max-height: 85%;
           margin: auto auto auto auto;
           transition: 1s all; }
-          .content .trade-mark .trade-mark-link .block img:hover {
+          .content .trade-mark .trade-mark-link .item img:hover {
             transition: 0.6s all;
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .featured-products {
   width: 100%;
@@ -204,9 +207,9 @@
   padding-top: 10px;
   display: flex;
   background-color: #333333;
-  display: flex;
   flex-direction: column; }
   .featured-products .intro {
+    font-size: 36px;
     text-align: center;
     height: 100px;
     padding: 30px auto; }
@@ -229,10 +232,10 @@
       transition: 1s; }
     .featured-products .item img {
       width: 100%;
+      height: 100%;
       transition: 1s all; }
       .featured-products .item img:hover {
         transition: 1s all;
-        -webkit-transform: scale(1.2);
         transform: scale(1.2);
         cursor: pointer; }
     .featured-products .item .item1 {
@@ -260,6 +263,35 @@
       grid-column-end: 4;
       grid-row-start: 2;
       grid-row-end: 3; }
+  @media (max-width: 768px) and (min-width: 320px) {
+    .featured-products .item {
+      grid-template-columns: 47% 47%;
+      gap: 20px; }
+      .featured-products .item .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4; }
+      .featured-products .item .item2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      .featured-products .item .item3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      .featured-products .item .item4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5; }
+      .featured-products .item .item5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5; } }
 
 .new-cat {
   margin: 0;
@@ -267,7 +299,7 @@
   width: 100%;
   padding-top: 30px; }
   .new-cat .intro {
-    letter-spacing: 1px;
+    font-size: 36px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -280,8 +312,7 @@
     .new-cat .slider .item {
       background-color: black;
       width: 80%;
-      border-radius: 30px;
-      height: 450px;
+      height: 350px;
       position: relative;
       transition: 1s all; }
       .new-cat .slider .item:hover {
@@ -298,11 +329,14 @@
           -webkit-transform: scale(1.1);
           transform: scale(1.1); }
       .new-cat .slider .item img {
+        width: 108px;
+        height: 180px;
         transition: 1s all;
         position: absolute;
-        left: 15%;
-        top: 10%;
-        width: 70%; }
+        left: 30%;
+        top: 13%;
+        max-width: 100%;
+        max-height: 70%; }
       .new-cat .slider .item button {
         transition: 1s all;
         display: none;
@@ -333,10 +367,30 @@
         font-size: 26px;
         color: white; }
   @media (max-width: 1024px) {
-    .new-cat h3 {
+    .new-cat .slider .item h3 {
       font-size: 15px; }
-    .new-cat h4 {
-      font-size: 10px; } }
+    .new-cat .slider .item h4 {
+      font-size: 15px; }
+    .new-cat .slider .item img {
+      left: 20%; }
+    .new-cat .slider .item #btn1 {
+      left: 20%; }
+    .new-cat .slider .item #btn2 {
+      right: 20%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .new-cat .slider .item img {
+      left: 25%; }
+    .new-cat .slider .item #btn1 {
+      left: 25%; }
+    .new-cat .slider .item #btn2 {
+      right: 25%; } }
+  @media (min-width: 320px) and (max-width: 425px) {
+    .new-cat .slider .item img {
+      left: 30%; }
+    .new-cat .slider .item #btn1 {
+      left: 32%; }
+    .new-cat .slider .item #btn2 {
+      right: 32%; } }
 
 .news {
   margin: 0;
@@ -344,7 +398,7 @@
   width: 100%;
   padding-top: 30px; }
   .news .intro {
-    letter-spacing: 1px;
+    font-size: 36px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -357,7 +411,6 @@
     .news .details .column {
       width: 32%; }
       .news .details .column img {
-        height: 260px;
         width: 100%; }
       .news .details .column h4 {
         margin-top: 30px;
@@ -370,6 +423,8 @@
         font-size: 14px; }
       .news .details .column p {
         color: #6a6a6a; }
+      .news .details .column:hover img, .news .details .column:hover h4 {
+        cursor: pointer; }
       .news .details .column:hover h4 {
         color: yellow; }
   .news button {
@@ -386,32 +441,34 @@
       opacity: 1.2;
       background-color: grey;
       color: white; }
-  @media (max-width: 968px) {
+  @media (max-width: 1279px) {
     .news .details {
       flex-wrap: wrap; } }
+  @media (min-width: 968px) {
+    .news .column img {
+      height: 260px; } }
 
 .appeal {
   text-align: center;
   background-color: #222222; }
   .appeal h2 {
+    font-size: 36px;
     padding-top: 80px;
     padding-bottom: 70px;
-    color: yellow;
-    letter-spacing: 1px; }
+    color: yellow; }
   .appeal p {
     margin: 0 15%;
     font-size: 16px;
     color: #636363; }
   .appeal button {
     margin: 30px auto;
-    padding: 20px 50px;
+    padding: 15px 20px;
     background-color: yellow;
     border-radius: 10px;
     transition: 0.7s all; }
     .appeal button:hover {
       cursor: pointer;
       transition: 1s all;
-      padding: 20px 60px;
       font-weight: bolder;
       background-color: grey;
       color: white; }
@@ -490,6 +547,11 @@
     @media (max-width: 960px) {
       .footer .contact {
         flex-wrap: wrap; } }
+    @media (max-width: 768px) {
+      .footer .contact .register .import-mail {
+        width: 200px; }
+      .footer .contact .register button {
+        left: 160px; } }
   .footer .info {
     padding: 30px 0;
     background-color: black;
