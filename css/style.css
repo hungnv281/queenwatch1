@@ -136,13 +136,13 @@
             color: #f6f8f6;
             background-color: grey; }
     .content .infomation #item1 {
-      background-image: url(images/content-img.png); }
+      background-image: url(/images/content-img.png); }
     .content .infomation #item2 {
-      background-image: url(images/content-img2.png); }
+      background-image: url(/images/content-img2.png); }
     .content .infomation #item3 {
-      background-image: url(images/content-img3.png); }
+      background-image: url(/images/content-img3.png); }
     .content .infomation #item4 {
-      background-image: url(images/content-img4.png); }
+      background-image: url(/images/content-img4.png); }
   @media (max-width: 1365px) {
     .content {
       font-size: 15px; } }
